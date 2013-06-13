@@ -21,7 +21,7 @@ func KitchenSink() {
 	fmt.Println(stringMap)
 
 	inputs := make(chan string)
-	go func(m map[int]string) {
+	go func(m map[int32]string) {
 		fmt.Println("Sending values...")
 		for _, v := range m {
 			inputs <- v
